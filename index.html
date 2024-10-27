@@ -6,6 +6,7 @@
     <title>AI Pioneers</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+        /* Existing styles */
         :root {
             --primary: #1a237e;
             --secondary: #283593;
@@ -126,7 +127,7 @@
             border-radius: 12px;
             transition: transform 0.3s;
             text-align: center;
-            position: relative; /* Added for GitHub button positioning */
+            position: relative;
         }
 
         .project-card:hover {
@@ -214,83 +215,82 @@
             font-size: 2.5rem;
             margin-bottom: 2rem;
         }
+
+        /* Styles for Meet the Team section */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 3rem 0;
+        }
+
+        .team-member {
+            background-color: var(--secondary);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            color: var(--text);
+            transition: transform 0.3s;
+        }
+
+        .team-member:hover {
+            transform: translateY(-8px);
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            background-color: var(--accent);
+        }
+
+        .team-member h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .team-member p {
+            font-size: 1rem;
+        }
     </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#join">Join Us</a></li>
-        </ul>
-    </nav>
+    <!-- Existing sections -->
 
-    <section id="about" class="hero">
+    <!-- New Meet the Team Section -->
+    <section id="team">
         <div class="section-content">
-            <img src="logo.png" alt="AI Pioneers Logo" class="logo-placeholder">
-            <h1>AI Pioneers</h1>
-            <p>Exploring the future of artificial intelligence through hands-on projects and collaborative learning.</p>
-            <div class="social-buttons">
-                <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://discord.com" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="section-content">
-            <h2>Our Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <a href="#" class="github-link" title="View on GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <div class="small-logo-placeholder"></div>
-                    <h3>Real-time Object Detection using OpenCV</h3>
-                    <p>Program developed using Python and OpenCV utilizing neural networks and the state-of-the-art YOLO architecture to detect objects in real time. Made to help self driving cars "see" objects while driving.</p>
+            <h2>Meet the Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="team1.jpg" alt="Team Member 1">
+                    <h3>Alex Smith</h3>
+                    <p>President & Founder</p>
+                    <p>Passionate about AI and leads the club with a vision to inspire innovation.</p>
                 </div>
-                <div class="project-card">
-                    <a href="#" class="github-link" title="View on GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <div class="small-logo-placeholder"></div>
-                    <h3>Music Recommender System for Spotify</h3>
-                    <p>Taking information from songs the user listens to the most to compile a playlist of the songs most similar to the songs the user listens to. Created using Python using the KNN algorithm it continually updates and works similarly to a continual feedback loop.</p>
+                <div class="team-member">
+                    <img src="team2.jpg" alt="Team Member 2">
+                    <h3>Jamie Lee</h3>
+                    <p>Vice President</p>
+                    <p>Focuses on project development and encourages collaborative learning.</p>
                 </div>
-                <div class="project-card">
-                    <a href="#" class="github-link" title="View on GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <div class="small-logo-placeholder"></div>
-                    <h3>Virtual Glasses Try-On Using OpenCV</h3>
-                    <p>Program developed using OpenCV and Python that allows users to virtually try on an extensive range of glasses styles, colors, and sizes from the comfort of their own homes.</p>
+                <div class="team-member">
+                    <img src="team3.jpg" alt="Team Member 3">
+                    <h3>Jordan Kim</h3>
+                    <p>Secretary</p>
+                    <p>Keeps the team organized and manages communication with members.</p>
+                </div>
+                <div class="team-member">
+                    <img src="team4.jpg" alt="Team Member 4">
+                    <h3>Taylor Brown</h3>
+                    <p>Treasurer</p>
+                    <p>Ensures financial resources are managed effectively for projects.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="join">
-        <div class="section-content">
-            <h2>Join Us</h2>
-            <div class="join-form">
-                <form>
-                    <input type="text" placeholder="Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="text" placeholder="Grade" required>
-                    <textarea placeholder="Why do you want to join?" rows="4" required></textarea>
-                    <button type="submit">Submit Application</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>Powered by</p>
-        <div class="footer-logos">
-            <img src="logo1.png" alt="Logo 1" class="small-logo-placeholder">
-            <img src="logo2.png" alt="Logo 2" class="small-logo-placeholder">
-        </div>
-    </footer>
+    <!-- Existing footer -->
 </body>
 </html>
