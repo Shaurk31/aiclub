@@ -256,7 +256,59 @@
     </style>
 </head>
 <body>
-    <!-- Existing sections -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#team">Meet the Team</a></li>
+            <li><a href="#join">Join Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="hero">
+        <div class="section-content">
+            <img src="logo.png" alt="AI Pioneers Logo" class="logo-placeholder">
+            <h1>AI Pioneers</h1>
+            <p>AI Pioneers is a high school club at Cupertino High School that introduces students to the exciting world of Artificial Intelligence and Machine Learning...</p>
+            <div class="social-buttons">
+                <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://discord.com" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2>Our Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <a href="#" class="github-link" title="View on GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <div class="small-logo-placeholder"></div>
+                    <h3>Real-time Object Detection using OpenCV</h3>
+                    <p>Utilizing neural networks and YOLO architecture, this project detects objects in real-time for self-driving applications.</p>
+                </div>
+                <div class="project-card">
+                    <a href="#" class="github-link" title="View on GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <div class="small-logo-placeholder"></div>
+                    <h3>Music Recommender System for Spotify</h3>
+                    <p>This system curates a personalized playlist using the KNN algorithm to recommend similar songs.</p>
+                </div>
+                <div class="project-card">
+                    <a href="#" class="github-link" title="View on GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <div class="small-logo-placeholder"></div>
+                    <h3>AI News Summarizer</h3>
+                    <p>Using NLP and transformers, this tool summarizes AI-related news articles, making information digestible and accessible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- New Meet the Team Section -->
     <section id="team">
@@ -291,6 +343,30 @@
         </div>
     </section>
 
-    <!-- Existing footer -->
+    <section id="join">
+        <div class="section-content">
+            <h2>Join Us</h2>
+            <div class="join-form">
+                <form action="#" method="post">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AI Pioneers Club. All rights reserved.</p>
+        <div class="footer-logos">
+            <div class="small-logo-placeholder"></div>
+            <div class="small-logo-placeholder"></div>
+            <div class="small-logo-placeholder"></div>
+        </div>
+    </footer>
 </body>
 </html>
