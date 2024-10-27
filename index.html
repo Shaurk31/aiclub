@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HS AI Club</title>
+    <!-- Adding GitHub icon from CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Previous styles remain the same until project-card */
+        :root {
+            --primary: #1a237e;
+            --secondary: #283593;
+            --accent: #3949ab;
+            --text: #ffffff;
+            --background: #0a1029;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: var(--primary);
+            padding: 1.5rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 3rem;
+        }
+
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        section {
+            min-height: 100vh;
+            padding: 8rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .section-content {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: rgba(26, 35, 126, 0.1);
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero {
+            text-align: center;
+            gap: 3rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .logo-placeholder {
+            width: 180px;
+            height: 180px;
+            background-color: var(--accent);
+            border-radius: 50%;
+            margin: 2rem auto;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            padding: 3rem 0;
+        }
+
+        .project-card {
+            background-color: var(--secondary);
+            padding: 2rem;
+            border-radius: 12px;
+            transition: transform 0.3s;
+            text-align: center;
+            position: relative; /* Added for GitHub button positioning */
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .project-card h3 {
+            margin: 1rem 0;
+        }
+
+        /* New GitHub button styles */
+        .github-link {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            color: var(--text);
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .github-link:hover {
+            transform: scale(1.1);
+        }
+
+        .join-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: var(--secondary);
+            padding: 3rem;
+            border-radius: 12px;
+        }
+
+        .join-form input, .join-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin: 1rem 0;
+            border: none;
+            border-radius: 8px;
+            background-color: var(--background);
+            color: var(--text);
+            font-size: 1rem;
+        }
+
+        .join-form button {
+            background-color: var(--accent);
+            color: var(--text);
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: opacity 0.3s;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+            width: 100%;
+        }
+
+        .join-form button:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            background-color: var(--primary);
+            padding: 3rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .footer-logos {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .small-logo-placeholder {
+            width: 50px;
+            height: 50px;
+            background-color: var(--accent);
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#join">Join Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="hero">
+        <div class="section-content">
+            <div class="logo-placeholder"></div>
+            <h1>High School AI Club</h1>
+            <p>Exploring the future of artificial intelligence through hands-on projects and collaborative learning.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2>Our Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <a href="#" class="github-link" title="View on GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <div class="small-logo-placeholder"></div>
+                    <h3>Machine Learning Basics</h3>
+                    <p>Introduction to fundamental ML concepts through practical exercises.</p>
+                </div>
+                <div class="project-card">
+                    <a href="#" class="github-link" title="View on GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <div class="small-logo-placeholder"></div>
+                    <h3>Computer Vision</h3>
+                    <p>Building and training models to recognize and classify images.</p>
+                </div>
+                <div class="project-card">
+                    <a href="#" class="github-link" title="View on GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <div class="small-logo-placeholder"></div>
+                    <h3>Natural Language Processing</h3>
+                    <p>Creating chatbots and text analysis tools.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="join">
+        <div class="section-content">
+            <h2>Join Us</h2>
+            <div class="join-form">
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="text" placeholder="Grade" required>
+                    <textarea placeholder="Why do you want to join?" rows="4" required></textarea>
+                    <button type="submit">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Powered by</p>
+        <div class="footer-logos">
+            <div class="small-logo-placeholder"></div>
+            <div class="small-logo-placeholder"></div>
+        </div>
+    </footer>
+</body>
+</html>
