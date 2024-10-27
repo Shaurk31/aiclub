@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HS AI Club</title>
-    <!-- Adding GitHub icon from CDN -->
+    <title>AI Pioneers</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* Previous styles remain the same until project-card */
         :root {
             --primary: #1a237e;
             --secondary: #283593;
@@ -89,6 +87,22 @@
             font-size: 1.2rem;
             max-width: 600px;
             margin: 0 auto;
+        }
+
+        .social-buttons {
+            margin: 1.5rem 0;
+        }
+
+        .social-buttons a {
+            color: var(--text);
+            margin: 0 1rem;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+
+        .social-buttons a:hover {
+            transform: scale(1.1);
         }
 
         .logo-placeholder {
@@ -213,9 +227,14 @@
 
     <section id="about" class="hero">
         <div class="section-content">
-            <div class="logo-placeholder"></div>
-            <h1>High School AI Club</h1>
+            <img src="logo.png" alt="AI Pioneers Logo" class="logo-placeholder">
+            <h1>AI Pioneers</h1>
             <p>Exploring the future of artificial intelligence through hands-on projects and collaborative learning.</p>
+            <div class="social-buttons">
+                <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://discord.com" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+            </div>
         </div>
     </section>
 
@@ -228,24 +247,24 @@
                         <i class="fab fa-github"></i>
                     </a>
                     <div class="small-logo-placeholder"></div>
-                    <h3>Machine Learning Basics</h3>
-                    <p>Introduction to fundamental ML concepts through practical exercises.</p>
+                    <h3>Real-time Object Detection using OpenCV</h3>
+                    <p>Program developed using Python and OpenCV utilizing neural networks and the state-of-the-art YOLO architecture to detect objects in real time. Made to help self driving cars "see" objects while driving.</p>
                 </div>
                 <div class="project-card">
                     <a href="#" class="github-link" title="View on GitHub">
                         <i class="fab fa-github"></i>
                     </a>
                     <div class="small-logo-placeholder"></div>
-                    <h3>Computer Vision</h3>
-                    <p>Building and training models to recognize and classify images.</p>
+                    <h3>Music Recommender System for Spotify</h3>
+                    <p>Taking information from songs the user listens to the most to compile a playlist of the songs most similar to the songs the user listens to. Created using Python using the KNN algorithm it continually updates and works similarly to a continual feedback loop.</p>
                 </div>
                 <div class="project-card">
                     <a href="#" class="github-link" title="View on GitHub">
                         <i class="fab fa-github"></i>
                     </a>
                     <div class="small-logo-placeholder"></div>
-                    <h3>Natural Language Processing</h3>
-                    <p>Creating chatbots and text analysis tools.</p>
+                    <h3>Virtual Glasses Try-On Using OpenCV</h3>
+                    <p>Program developed using OpenCV and Python that allows users to virtually try on an extensive range of glasses styles, colors, and sizes from the comfort of their own homes.</p>
                 </div>
             </div>
         </div>
@@ -269,8 +288,8 @@
     <footer>
         <p>Powered by</p>
         <div class="footer-logos">
-            <div class="small-logo-placeholder"></div>
-            <div class="small-logo-placeholder"></div>
+            <img src="logo1.png" alt="Logo 1" class="small-logo-placeholder">
+            <img src="logo2.png" alt="Logo 2" class="small-logo-placeholder">
         </div>
     </footer>
 </body>
