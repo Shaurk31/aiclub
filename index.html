@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Chintan</title>
+    <title>AI Pioneers</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
-        /* Existing styles */
         :root {
             --primary: #1a237e;
             --secondary: #283593;
@@ -138,12 +138,11 @@
             margin: 1rem 0;
         }
 
-        /* New GitHub button styles */
         .github-link {
             position: absolute;
             top: 1rem;
-            right: 1rem;
-            color: var(--text);
+            left: 1rem;
+            color: #ffffff;
             font-size: 1.5rem;
             text-decoration: none;
             transition: transform 0.3s ease;
@@ -153,40 +152,13 @@
             transform: scale(1.1);
         }
 
-        .join-form {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: var(--secondary);
-            padding: 3rem;
-            border-radius: 12px;
-        }
-
-        .join-form input, .join-form textarea {
-            width: 100%;
-            padding: 0.8rem;
-            margin: 1rem 0;
-            border: none;
+        .highlighted-text {
+            background-color: rgba(26, 35, 126, 0.1);
+            padding: 1rem;
             border-radius: 8px;
-            background-color: var(--background);
             color: var(--text);
-            font-size: 1rem;
-        }
-
-        .join-form button {
-            background-color: var(--accent);
-            color: var(--text);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: opacity 0.3s;
-            font-size: 1.1rem;
-            margin-top: 1rem;
-            width: 100%;
-        }
-
-        .join-form button:hover {
-            opacity: 0.9;
+            font-size: 1.2rem;
+            text-align: center;
         }
 
         footer {
@@ -203,10 +175,9 @@
             margin-top: 1.5rem;
         }
 
-        .small-logo-placeholder {
+        .footer-logos img {
             width: 50px;
             height: 50px;
-            background-color: var(--accent);
             border-radius: 8px;
         }
 
@@ -215,44 +186,6 @@
             font-size: 2.5rem;
             margin-bottom: 2rem;
         }
-
-        /* Styles for Meet the Team section */
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            padding: 3rem 0;
-        }
-
-        .team-member {
-            background-color: var(--secondary);
-            padding: 2rem;
-            border-radius: 12px;
-            text-align: center;
-            color: var(--text);
-            transition: transform 0.3s;
-        }
-
-        .team-member:hover {
-            transform: translateY(-8px);
-        }
-
-        .team-member img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin-bottom: 1rem;
-            background-color: var(--accent);
-        }
-
-        .team-member h3 {
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .team-member p {
-            font-size: 1rem;
-        }
     </style>
 </head>
 <body>
@@ -260,8 +193,7 @@
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#team">Meet the Team</a></li>
-            <li><a href="#join">Join</a></li>
+            <li><a href="#join">Join Us</a></li>
         </ul>
     </nav>
 
@@ -283,61 +215,19 @@
             <h2>Our Projects</h2>
             <div class="project-grid">
                 <div class="project-card">
-                    <a href="#" class="github-link" title="View on GitHub">
+                    <a href="https://github.com/TinoAIPioneers/VisionARy" class="github-link" title="View on GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <div class="small-logo-placeholder"></div>
-                    <h3>Real-time Object Detection using OpenCV</h3>
-                    <p>Utilizing neural networks and YOLO architecture, this project detects objects in real-time for self-driving applications.</p>
+                    <h3>VisionARy: Smart Glasses</h3>
+                    <p>A revolutionary approach to assist visually impaired individuals using AI-driven smart glasses.</p>
                 </div>
                 <div class="project-card">
-                    <a href="#" class="github-link" title="View on GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <div class="small-logo-placeholder"></div>
                     <h3>Music Recommender System for Spotify</h3>
                     <p>This system curates a personalized playlist using the KNN algorithm to recommend similar songs.</p>
                 </div>
                 <div class="project-card">
-                    <a href="#" class="github-link" title="View on GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <div class="small-logo-placeholder"></div>
                     <h3>AI News Summarizer</h3>
                     <p>Using NLP and transformers, this tool summarizes AI-related news articles, making information digestible and accessible.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- New Meet the Team Section -->
-    <section id="team">
-        <div class="section-content">
-            <h2>Meet the Team</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <img src="team1.jpg" alt="Team Member 1">
-                    <h3>Vishresh Deepak</h3>
-                    <p>President</p>
-                    <p>Passionate about AI and leads the club with a vision to inspire innovation.</p>
-                </div>
-                <div class="team-member">
-                    <img src="team2.jpg" alt="Team Member 2">
-                    <h3>Anika Mukherjee</h3>
-                    <p>PR</p>
-                    <p>Focuses on project development and encourages collaborative learning.</p>
-                </div>
-                <div class="team-member">
-                    <img src="team3.jpg" alt="Team Member 3">
-                    <h3>Shauryan Kanaujia</h3>
-                    <p>Secretary</p>
-                    <p>Keeps the team organized and manages communication with members.</p>
-                </div>
-                <div class="team-member">
-                    <img src="team4.jpg" alt="Team Member 4">
-                    <h3>Nikhil Krishnaswamy</h3>
-                    <p>Treasurer</p>
-                    <p>Ensures financial resources are managed effectively for projects.</p>
                 </div>
             </div>
         </div>
@@ -346,16 +236,9 @@
     <section id="join">
         <div class="section-content">
             <h2>Join Us</h2>
-            <div class="join-form">
-                <form action="#" method="post">
-                    <label for="name">Full Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                    <button type="submit">Submit</button>
-                </form>
+            <div class="highlighted-text">
+                <p><strong>Meeting Info:</strong> Room 115</p>
+                <p><strong>Email:</strong> tinoaipioneers@gmail.com</p>
             </div>
         </div>
     </section>
@@ -363,9 +246,9 @@
     <footer>
         <p>&copy; 2024 AI Pioneers Club. All rights reserved.</p>
         <div class="footer-logos">
-            <div class="small-logo-placeholder"></div>
-            <div class="small-logo-placeholder"></div>
-            <div class="small-logo-placeholder"></div>
+            <a href="https://titled-designs.vercel.app">
+                <img src="titled logo.png" alt="TITLED">
+              </a>              
         </div>
     </footer>
 </body>
